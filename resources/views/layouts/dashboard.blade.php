@@ -10,6 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+
      <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <title>AdminLTE 3 | Starter</title>
@@ -81,9 +82,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </router-link>
           </li>
           
-
-          
-          <li class="nav-item has-treeview menu-open">
+            <li class="nav-item has-treeview ">
             <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-cog blue"></i>
               <p>
@@ -93,10 +92,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
+              <router-link to="/Users" class="nav-link">
+                  <i class="fas fa-users nav-icon green"></i>
+                  <p>Users</p>
+                  </router-link>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
